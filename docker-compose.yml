@@ -9,11 +9,11 @@ services:
     volumes:
       - ./config/tokens1.json:/app/config/tokens1.json
     environment:
-      - PROXY_URL=http://185.66.14.18:9579
-      - PROXY_LOGIN=oWktPS
-      - PROXY_PASSWORD=RBDn7L
-      - TOKENS_PATH=/app/config/tokens1.json
-      - KAFKA_SERVER_HOST=localhost:9092
+      - PROXY_URL=${PROXY_URL_1}
+      - PROXY_LOGIN=${PROXY_LOGIN_1}
+      - PROXY_PASSWORD=${PROXY_PASSWORD_1}
+      - TOKENS_PATH=${TOKENS_FILE_PATH_1}
+      - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_1}
 
   fetcher-instance-2:
     build:
