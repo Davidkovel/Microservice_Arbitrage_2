@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  fetcher-instance-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: price-instance-1
+    volumes:
+      - ./config/tokens1.json:/app/config/tokens1.json
+    environment:
+      - PROXY_URL=http://185.66.14.18:9579
+      - PROXY_LOGIN=oWktPS
+      - PROXY_PASSWORD=RBDn7L
+      - TOKENS_PATH=/app/config/tokens1.json
+      - KAFKA_SERVER_HOST=localhost:9092
+
+  fetcher-instance-2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: price-instance-2
+    volumes:
+      - ./config/tokens2.json:/app/config/tokens2.json
+    environment:
+      - PROXY_URL=${PROXY_URL_2}
+      - PROXY_LOGIN=${PROXY_LOGIN_2}
+      - PROXY_PASSWORD=${PROXY_PASSWORD_2}
+      - TOKENS_PATH=${TOKENS_FILE_PATH_2}
+      - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_2}
+
