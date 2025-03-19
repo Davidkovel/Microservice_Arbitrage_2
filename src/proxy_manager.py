@@ -19,6 +19,12 @@ class KafkaServerConfig:
     bootstrap_servers: str
 
 
+@dataclass
+class WebServerConfig:
+    web_host: str
+    web_port: str
+
+
 class ProxyManager:
     def __init__(self, proxy_config: ProxyConfig):
         self.proxy_config = proxy_config
@@ -43,5 +49,15 @@ class ServerManager:
         self.server_config = server_config
 
     def get_server_host(self):
-        print('FDKADASD', self.server_config)
         return self.server_config
+
+
+class WebServerManager:
+    def __init__(self, web_config: WebServerConfig):
+        self.web_server_config = web_config
+
+    def get_web_server_host(self) -> str:
+        return self.web_server_config.web_host
+
+    def get_web_port(self) -> str:
+        return self.web_server_config.web_port

@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   fetcher-instance-1:
     build:

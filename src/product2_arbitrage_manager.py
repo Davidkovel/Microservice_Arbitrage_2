@@ -3,6 +3,7 @@ import random
 import time
 
 from src.kafka.producer import KafkaProducer
+from src.rest_api.sender import RestApiSender
 from utils import logger
 from utils.logger import *
 from src.product_exchanges import DexApi, MexcAPI
@@ -40,8 +41,9 @@ class SpreadCalculator:
 
 
 class ArbitrageNotifier:
-    def __init__(self, bootstrap_servers: str, topic: str = "arbitrage_dex_cex-notifications"):
-        self.kafka_producer = KafkaProducer(bootstrap_servers, topic)
+    def __init__(self, bootstrap_servers: str, web_host: str, web_port: str, topic: str = "arbitrage_dex_cex-notifications"):
+        # self.kafka_producer = KafkaProducer(bootstrap_servers, topic)
+        self.rest_api_producer = RestApiSender(web_host, web_port)
 
     async def notify(self, token: str, spread: float, price_mexc: float, price_dex: float, contract_address: str,
                      chain: str, thread_id: int):
@@ -59,24 +61,38 @@ class ArbitrageNotifier:
             f"🖋️ Created by [XGenius PRO]\n"
         )
 
-        kafka_message = {
-            "token": token,
-            "spread": spread,
-            "price_mexc": price_mexc,
-            "price_dex": price_dex,
-            "contract_address": contract_address,
-            "chain": chain,
-            "thread_id": thread_id,
+        rest_api_message = {
             "formatted_message": message,
-            "urls": {
-                "dex": dex_url,
-                "mexc": mexc_url
-            }
+            "thread_id": thread_id,
+            "dex_url": dex_url,  # dex_url на верхнем уровне
+            "mexc_url": mexc_url  # mexc_url на верхнем уровне
         }
 
-        logger.info(f"Sending arbitrage message to Kafka Consumer (microservice telegram bot): {kafka_message}")
-        await self.kafka_producer.send_message(token, kafka_message)
+        try:
+            await self.rest_api_producer.send_message(rest_api_message)
+            logger.info(f"Sent arbitrage message via REST API: {rest_api_message}")
+        except Exception as e:
+            logger.error(f"Failed to send arbitrage message via REST API: {e}")
+            raise
 
+
+        # For Kafka Message:
+        # kafka_message = {
+        #     "token": token,
+        #     "spread": spread,
+        #     "price_mexc": price_mexc,
+        #     "price_dex": price_dex,
+        #     "contract_address": contract_address,
+        #     "chain": chain,
+        #     "thread_id": thread_id,
+        #     "formatted_message": message,
+        #     "urls": {
+        #         "dex": dex_url,
+        #         "mexc": mexc_url
+        #     }
+        # }
+        # logger.info(f"Sending arbitrage message to Kafka Consumer (microservice telegram bot): {kafka_message}")
+        # await self.kafka_producer.send_message(token, kafka_message)
         # await self.send_telegram_message(message, message_thread_id=thread_id, dex_url=dex_url, mexc_url=mexc_url)
 
     def close(self):

@@ -5,7 +5,7 @@ from src.product_exchanges import MexcAPI, DexApi
 from src.product2_arbitrage_manager import ArbitrageManager, PriceFetcher, SpreadCalculator, ArbitrageNotifier
 from src.token_manager import TokenManager
 from src.proxy_manager import ProxyManager, ProxyConfig, TokensFileConfig, TokensFileManager, KafkaServerConfig, \
-    ServerManager
+    ServerManager, WebServerConfig
 
 
 class AbstractFactory(ABC):
@@ -33,8 +33,14 @@ class ArbitrageFactory(AbstractFactory):
             bootstrap_servers=self.config["kafka"]["server_host"]
         )
 
+        web_server_config = WebServerConfig(
+            web_host=self.config["web_app"]["web_server_host"],
+            web_port=self.config["web_app"]["web_port"]
+        )
+
         proxy_manager = ProxyManager(proxy_config)
         tokens_file_manager = TokensFileManager(tokens_file_config)
+
         parser = JsonParse(tokens_file_manager)
         list_tokens = parser.parse()
 
@@ -45,7 +51,8 @@ class ArbitrageFactory(AbstractFactory):
         # Ззависимости для ArbitrageManager
         price_fetcher = PriceFetcher(mexc_api, dex_api)
         spread_calculator = SpreadCalculator()
-        arbitrage_notifier = ArbitrageNotifier(kafka_server_config.bootstrap_servers)
+        arbitrage_notifier = ArbitrageNotifier(kafka_server_config.bootstrap_servers, web_server_config.web_host,
+                                               web_server_config.web_port)
         token_manager = TokenManager(list_tokens)
 
         return ArbitrageManager(

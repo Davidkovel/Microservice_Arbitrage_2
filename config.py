@@ -27,7 +27,11 @@ class ConfigLoader:
                     "path": os.getenv("TOKENS_FILE_PATH")
                 },
                 "kafka":{
-                    "server_host": os.getenv("KAFKA_SERVER_HOST")
+                    "server_host": "172.19.0.3:9092"
+                },
+                "web_app": {
+                    "web_server_host": "127.0.0.1",
+                    "web_port": 8000
                 }
             }
             logger.info("Loaded configuration from environment variables")
