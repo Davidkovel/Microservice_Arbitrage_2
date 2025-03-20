@@ -1,9 +1,17 @@
 import asyncio
 
+from aiogram_bot.bot import TelegramBot
 from src.factory import AbstractFactory, ArbitrageFactory
 
 from utils import logger
 from config import ConfigLoader
+
+
+async def run_bot(telegram_bot: TelegramBot):
+    """
+    Start the Telegram bot.
+    """
+    await telegram_bot.start()
 
 
 async def run_arbitrage(factory: AbstractFactory):
@@ -19,7 +27,9 @@ async def main():
     Run Arbitrage manager concurrently.
     """
     config = ConfigLoader.load_config()
-    factory = ArbitrageFactory(config)
+
+    telegram_bot = TelegramBot(config["telegram_bot"]["token"])
+    factory = ArbitrageFactory(config, telegram_bot)
     try:
         await asyncio.gather(
             run_arbitrage(factory),

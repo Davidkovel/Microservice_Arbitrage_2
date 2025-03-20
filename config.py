@@ -26,12 +26,15 @@ class ConfigLoader:
                 "tokens_file": {
                     "path": os.getenv("TOKENS_FILE_PATH")
                 },
-                "kafka":{
+                "kafka": {
                     "server_host": "172.19.0.3:9092"
                 },
                 "web_app": {
-                    "web_server_host": "127.0.0.1",
-                    "web_port": 8000
+                    "web_server_host": "172.17.0.2",
+                    "web_port": 80
+                },
+                "telegram_bot": {
+                    "token": os.getenv("TELEGRAM_BOT_TOKEN")
                 }
             }
             logger.info("Loaded configuration from environment variables")

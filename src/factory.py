@@ -15,8 +15,9 @@ class AbstractFactory(ABC):
 
 
 class ArbitrageFactory(AbstractFactory):
-    def __init__(self, config):
+    def __init__(self, config, telegram_bot):
         self.config = config
+        self.telegram_bot = telegram_bot
 
     def create_arbitrage_manager(self) -> ArbitrageManager:
         proxy_config = ProxyConfig(
@@ -51,7 +52,7 @@ class ArbitrageFactory(AbstractFactory):
         # Ззависимости для ArbitrageManager
         price_fetcher = PriceFetcher(mexc_api, dex_api)
         spread_calculator = SpreadCalculator()
-        arbitrage_notifier = ArbitrageNotifier(kafka_server_config.bootstrap_servers, web_server_config.web_host,
+        arbitrage_notifier = ArbitrageNotifier(self.telegram_bot, kafka_server_config.bootstrap_servers, web_server_config.web_host,
                                                web_server_config.web_port)
         token_manager = TokenManager(list_tokens)
 
