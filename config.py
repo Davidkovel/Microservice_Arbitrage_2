@@ -24,7 +24,7 @@ class ConfigLoader:
                     "password": os.getenv("PROXY_PASSWORD")
                 },
                 "tokens_file": {
-                    "path": os.getenv("TOKENS_FILE_PATH")
+                    "path": os.getenv("TOKENS_PATH")
                 },
                 "kafka": {
                     "server_host": "172.19.0.3:9092"
