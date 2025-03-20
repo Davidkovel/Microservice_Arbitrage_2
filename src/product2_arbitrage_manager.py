@@ -134,8 +134,9 @@ class ArbitrageManager:
             # logger.info(f'CHECKING {token}, {price_mexc} - {price_dex} ')
             if "error" in price_dex or "error" in price_mexc:
                 error_dex_time_limit = price_dex["error"].split("!")[0]
-                if error_dex_time_limit == "Rate limit exceeded":
-                    time = random.randint(1, 2)
+                check_error_dex_time_limit = price_dex["message"]
+                if error_dex_time_limit == "Rate limit exceeded" or check_error_dex_time_limit == "Request frequently too fast!":
+                    time = random.randint(2, 3)
                     await asyncio.sleep(time)
                 logger.error(f"[ERROR] Ошибка получения цен: {token} MEXC: {price_mexc}, DEX: {price_dex}")
                 return

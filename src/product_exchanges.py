@@ -80,6 +80,7 @@ class MexcAPI(ExchangeApi):
                     await asyncio.sleep(5)
                     return {"error": "Mexc error response"}
 
+                await asyncio.sleep(0.5)
                 price = response_data["data"]["fairPrice"]
                 # logger.info(f'mexc {coin} {price}')
                 return {"price": float(price)}

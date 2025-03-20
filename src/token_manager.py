@@ -21,7 +21,7 @@ class TokenManager:
         self.cooldown_tokens.add(token)
         await asyncio.sleep(cooldown_time)
         self.cooldown_tokens.remove(token)
-        logger.info(f"[INFO] {token} is back in rotation")
+        # logger.info(f"[INFO] {token} is back in rotation")
 
     def update_spread(self, token: str, spread: float):
         """Обновляет спред для токена."""
@@ -39,6 +39,7 @@ class TokenManager:
         """Проверяет наличие токена в истории."""
         return token in self.current_tokens_with_spread
 
+
 # Pattern State
 
 
@@ -47,7 +48,8 @@ class SpreadState(ABC):
         self.context = context
 
     @abstractmethod
-    def handle_spread(self, token: str, spread: float, minimum_spread: float, token_manager: TokenManager) -> bool | dict:
+    def handle_spread(self, token: str, spread: float, minimum_spread: float,
+                      token_manager: TokenManager) -> bool | dict:
         pass
 
 
@@ -74,61 +76,66 @@ class SpreadContext:
 
 class HasSpreadState(SpreadState):
     def handle_spread(self, token: str, spread: float, minimum_spread: float,
-                      token_manager: TokenManager) -> bool | dict:
-        if token_manager.is_token_in_history(token):
+                      token_manager: TokenManager) -> dict:
+        if token_manager.is_token_in_history(token):  # Если токен уже в истории
             self.context.transition_to(CheckSpreadAvailableState(self.context))
             return self.context.handle_spread(token, spread, minimum_spread)
-        if spread >= 30:
+        elif spread >= 30:  # Если спред >= 30%
             token_manager.update_spread(token, spread)
             return {"Has_spread": True, "thread_id": 24}
-        if spread > minimum_spread:
+        elif spread > minimum_spread:  # Если спред > minimum_spread
             token_manager.update_spread(token, spread)
             return {"Has_spread": True, "thread_id": 4294967301}
+
+        # Если спред не превышает minimum_spread
         return {"Has_spread": False, "thread_id": None}
 
 
 class CheckSpreadAvailableState(SpreadState):
     def handle_spread(self, token: str, spread: float, minimum_spread: float,
-                      token_manager: TokenManager) -> bool | dict:
+                      token_manager: TokenManager) -> dict:
         current_spread = token_manager.get_current_spread(token)
 
-        if spread >= 30:
+        if spread >= 30:  # Переход в SpreadLifeChangeState только при spread >= 30
             self.context.transition_to(SpreadLifeChangeState(self.context))
             return self.context.handle_spread(token, spread, minimum_spread)
-        elif spread < minimum_spread:
+        elif spread < minimum_spread:  # Удаляем токен, если спред меньше minimum_spread
             token_manager.remove_spread(token)
             return {"Has_spread": False, "thread_id": None}
-        elif spread > current_spread + 4:
+        elif spread > current_spread + 4:  # Спред увеличился на 4% или больше
             token_manager.update_spread(token, spread)
-            # self.context.transition_to(SpreadIncreasedState(self.context))
             return {"Has_spread": True, "thread_id": 4294967301}
-        elif spread < current_spread - 4:
+        elif spread < current_spread - 4:  # Спред уменьшился на 4% или больше
             token_manager.update_spread(token, spread)
-            # self.context.transition_to(SpreadDecreasedState(self.context))
             return {"Has_spread": True, "thread_id": 4294967301}
 
+        # Если спред не изменился значительно, обновляем его и возвращаем False
         token_manager.update_spread(token, spread)
         return {"Has_spread": False, "thread_id": None}
 
 
 class SpreadLifeChangeState(SpreadState):
     def handle_spread(self, token: str, spread: float, minimum_spread: float,
-                      token_manager: TokenManager) -> bool | dict:
+                      token_manager: TokenManager) -> dict:
         current_spread = token_manager.get_current_spread(token)
 
-        if spread < minimum_spread:
+        if spread < minimum_spread:  # Удаляем токен, если спред меньше minimum_spread
             token_manager.remove_spread(token)
             return {"Has_spread": False, "thread_id": None}
-        elif spread > current_spread + 4:
-            token_manager.update_spread(token, spread)
-            print('LIFE CHANGE')
-            return {"Has_spread": True, "thread_id": 24}
-        elif spread < current_spread - 4:
-            token_manager.update_spread(token, spread)
-            print('LIFE CHANGE')
-            return {"Has_spread": True, "thread_id": 24}
+        elif spread >= 30:  # Обрабатываем только спреды >= 30%
+            if spread > current_spread + 4:  # Спред увеличился на 4% или больше
+                token_manager.update_spread(token, spread)
+                print('LIFE CHANGE: Spread increased significantly')
+                return {"Has_spread": True, "thread_id": 24}
+            elif spread < current_spread - 4:  # Спред уменьшился на 4% или больше
+                token_manager.update_spread(token, spread)
+                print('LIFE CHANGE: Spread decreased significantly')
+                return {"Has_spread": True, "thread_id": 24}
+
+        # Если спред не изменился значительно, обновляем его и возвращаем False
         token_manager.update_spread(token, spread)
         return {"Has_spread": False, "thread_id": None}
 
-
 # Quai 4 процента, riz 3 процента
+
+
