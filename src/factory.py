@@ -10,7 +10,7 @@ from src.proxy_manager import ProxyManager, ProxyConfig, TokensFileConfig, Token
 
 class AbstractFactory(ABC):
     @abstractmethod
-    def create_arbitrage_manager(self) -> ArbitrageManager:
+    async def create_arbitrage_manager(self) -> ArbitrageManager:
         pass
 
 
@@ -19,7 +19,7 @@ class ArbitrageFactory(AbstractFactory):
         self.config = config
         self.telegram_bot = telegram_bot
 
-    def create_arbitrage_manager(self) -> ArbitrageManager:
+    async def create_arbitrage_manager(self) -> ArbitrageManager:
         proxy_config = ProxyConfig(
             url=self.config["proxy"]["url"],
             login=self.config["proxy"]["login"],
@@ -43,12 +43,13 @@ class ArbitrageFactory(AbstractFactory):
         tokens_file_manager = TokensFileManager(tokens_file_config)
 
         parser = JsonParse(tokens_file_manager)
-        list_tokens = parser.parse()
+        list_tokens, list_symbols = parser.parse()
 
         # Создаем API для бирж
-        mexc_api = MexcAPI(proxy_manager)
+        mexc_api = MexcAPI(proxy_manager, list_symbols)
         dex_api = DexApi(proxy_manager)
 
+        await mexc_api.run_websocket()
         # Ззависимости для ArbitrageManager
         price_fetcher = PriceFetcher(mexc_api, dex_api)
         spread_calculator = SpreadCalculator()

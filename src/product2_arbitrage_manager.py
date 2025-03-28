@@ -17,7 +17,7 @@ class PriceFetcher:
 
     async def fetch_prices(self, token: str, address_contract: str, chain: str) -> tuple:
         price_mexc = await self.mexc_api.get_price_coin(token)
-        await asyncio.sleep(0.1)
+        await asyncio.sleep(0.2)
         price_dex = await self.dex_api.get_price_coin(token, address_contract, chain)
         return token, price_mexc, price_dex
 
@@ -49,7 +49,7 @@ class ArbitrageNotifier:
     async def notify(self, token: str, spread: float, price_mexc: float, price_dex: float, contract_address: str,
                      chain: str, thread_id: int):
         dex_url = f"https://dexscreener.com/{chain.lower()}/{contract_address}"
-        mexc_url = f"https://futures.mexc.com/exchange?symbol={token}_USDT"
+        mexc_url = f"https://www.mexc.com/ru-RU/futures/{token}_USDT"
 
         message = (
             f"*Монета:* `{token}`\n"
@@ -111,7 +111,7 @@ class ArbitrageManager:
             arbitrage_notifier: ArbitrageNotifier,
             token_manager: TokenManager,
             mexc_exchange: MexcAPI,
-            dex_exchange: DexApi
+            dex_exchange: DexApi,
     ):
         self.price_fetcher = price_fetcher
         self.spread_calculator = spread_calculator
@@ -131,29 +131,33 @@ class ArbitrageManager:
             result = await self.price_fetcher.fetch_prices(token, contract_address, chain)
             token, price_mexc, price_dex = result
 
-            # logger.info(f'CHECKING {token}, {price_mexc} - {price_dex} ')
-            if "error" in price_dex or "error" in price_mexc:
+            logger.info(f'CHECKING {token}, {price_mexc} - {price_dex} ')
+            if "error" in price_dex:
                 error_dex_time_limit = price_dex["error"].split("!")[0]
                 check_error_dex_time_limit = price_dex["message"]
                 if error_dex_time_limit == "Rate limit exceeded" or check_error_dex_time_limit == "Request frequently too fast!":
                     time = random.randint(2, 3)
                     await asyncio.sleep(time)
+                    logger.warning("Sleeping Limit time too fast!!")
                 logger.error(f"[ERROR] Ошибка получения цен: {token} MEXC: {price_mexc}, DEX: {price_dex}")
                 return
 
-            spread = self.spread_calculator.calculate_spread(price_mexc["price"], price_dex["price"], mexc_higher=True)
+            spread = self.spread_calculator.calculate_spread(price_mexc["last_price"], price_dex["price"],
+                                                             mexc_higher=True)
 
             minimum_spread = token_info.get('minimum_spread', 6.0)
 
             result_spread = self.spread_context.handle_spread(token, spread, minimum_spread)
             has_spread, thread_id = result_spread['Has_spread'], result_spread['thread_id']
             if has_spread:
-                await self.arbitrage_notifier.notify(token, spread, price_mexc["price"], price_dex["price"],
+                await self.arbitrage_notifier.notify(token, spread, price_mexc["last_price"], price_dex["price"],
                                                      contract_address, chain, thread_id)
                 logger.info(f"[INFO] Sleeping for 1 minute for {token} to avoid spam...")
 
                 # asyncio.create_task(self.token_manager.add_to_cooldown(token, 20))
         except Exception as ex:
+            time_sleep_random = random.uniform(1, 2)
+            await asyncio.sleep(time_sleep_random)
             logger.error(
                 f"Failed to fetch prices for {token_info['token']}: {ex}, info mexc {price_mexc}, info dex {price_dex}")
 
@@ -161,6 +165,8 @@ class ArbitrageManager:
         while True:
             token_info = await queue.get()  # Получаем задачу из очереди
             try:
+                if queue.qsize() % 17 == 0:
+                    await asyncio.sleep(1)
                 await self.process_token(token_info)
             finally:
                 queue.task_done()  # Помечаем задачу как выполненную
@@ -170,7 +176,7 @@ class ArbitrageManager:
         queue = asyncio.Queue()  # Создаем очередь задач
 
         # Создаем и запускаем воркеры
-        workers = [asyncio.create_task(self.worker(queue)) for _ in range(10)]
+        workers = [asyncio.create_task(self.worker(queue)) for _ in range(8)]
 
         while True:
             tokens = self.token_manager.get_tokens()
@@ -187,7 +193,6 @@ class ArbitrageManager:
 
             # Ждем, пока все задачи в очереди будут выполнены
             await queue.join()
-
-            logger.info('Sleeping for 30 seconds before the next iteration...')
-            await asyncio.sleep(20)
+            logger.info("New interation")
+            await asyncio.sleep(1)
             # time.sleep(10)

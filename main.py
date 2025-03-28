@@ -18,7 +18,7 @@ async def run_arbitrage(factory: AbstractFactory):
     """
     Run the arbitrage manager.
     """
-    product = factory.create_arbitrage_manager()
+    product = await factory.create_arbitrage_manager()
     await product.run_find_arbitrage()
 
 

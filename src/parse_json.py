@@ -1,9 +1,11 @@
 import json
+from typing import List
 
 
 class JsonParse:
     def __init__(self, tokens_file_manager):
         self.json_data: dict = {}
+        self.symbols: List[str] = []
         self.tokens_file_manager = tokens_file_manager
 
     def parse(self) -> dict:
@@ -16,7 +18,9 @@ class JsonParse:
                     'chain': value['chain'],
                     'minimum_spread': value.get('minimum_spread', 6.0)
                 }
-        return self.json_data
+
+                self.symbols.append(key)
+        return self.json_data, self.symbols
 
 if __name__ == "__main__":
     j = JsonParse()

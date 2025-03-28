@@ -2,12 +2,16 @@ import time
 from abc import ABC, abstractmethod
 import asyncio
 from collections import deque
+from datetime import datetime
+from typing import Dict, Any
+
 import aiohttp
 
-from random import uniform
+from random import uniform, randint
 from aiohttp import BasicAuth
 from fake_useragent import UserAgent
 
+from src.exchanges.ws_exchanges.ws_mexc import MexcWebSocket
 from utils.logger import *
 
 # 185.80.149.5:22225:djzbXm91cp:3Va7NTEPoQ
@@ -40,56 +44,78 @@ class ExchangeApi(ABC):
             await self.session.close()
 
     @abstractmethod
-    async def get_account(self):
-        pass
-
-    @abstractmethod
     async def get_price_coin(self, coin: str, address_contract: str, chain: str):
         pass
 
 
-class MexcAPI(ExchangeApi):
-    def __init__(self, proxy_manager):
+class MexcAPI(ExchangeApi, MexcWebSocket):
+    def __init__(self, proxy_manager, symbols):
         super().__init__()
-        self.base_url = "https://contract.mexc.com/api/v1/contract/fair_price/"
-        self.headers = {
-            "User-Agent": user_agents[0]
-        }
+        self.lock = asyncio.Lock()
         self.proxy_manager = proxy_manager
+        self.symbols = symbols
+        self.price_cache = {}
+        self._running = False
+        self.ws_client = MexcWebSocket(callback=self._handle_ws_message)
 
-    async def get_price_coin(self, coin: str, address_contract=None, chain=None, retries=3) -> dict:
+    def _handle_ws_message(self, message: Dict[str, Any]):
+        """Обработчик сообщений WebSocket"""
         try:
-            symbol = f"{coin}_USDT" if not coin.endswith("_USDT") else coin
-            url = f"{self.base_url}{symbol}"
+            data = message.get('data', {})
+            if isinstance(data, list):
+                for ticker in data:
+                    self._process_ticker(ticker)
+            elif isinstance(data, dict):
+                self._process_ticker(data)
+        except Exception as e:
+            logger.error(f"Error handling WS message: {e}")
 
-            proxy_url = self.proxy_manager.get_proxy_url()
-            proxy_auth = self.proxy_manager.get_proxy_auth()
+    def _process_ticker(self, ticker: Dict[str, Any]):
+        """Обновление кэша цен"""
+        symbol = ticker.get('symbol', '').upper()
+        if symbol:
+            self.price_cache[symbol] = {
+                'last_price': float(ticker.get('lastPrice', 0)),
+                'timestamp': ticker.get('timestamp', datetime.now().timestamp())
+            }
 
-            async with self.session.get(url, proxy=proxy_url, proxy_auth=proxy_auth, headers=self.headers) as response:
-                if response.status == 429:
-                    logger.warning(f"Time limit excedeed")
-                    await asyncio.sleep(5)
+    async def get_price_coin(self, token: str) -> dict:
+        """Получение цены из кэша или через HTTP если нет в кэше"""
+        try:
+            async with self.lock:
+                print(self.price_cache)
+                if token in self.price_cache:
+                    print('getting from cache', token)
+                    return {"last_price": self.price_cache[token]['last_price']}
 
-                if response.status != 200:
-                    logger.error(f"Mexc HTTP error response status: {response.status}")
-                    return {"error": f"HTTP error {response.status}"}
+        except Exception as e:
+            logger.error(f"Error getting price from cache: {e}")
 
-                response_data = await response.json()
-                if not response_data.get("success", True):
-                    logger.error(f"Mexc error response: {response_data}")
-                    await asyncio.sleep(5)
-                    return {"error": "Mexc error response"}
+    async def run_websocket(self):
+        """Запуск WebSocket клиента"""
+        if self._running:
+            return
 
-                await asyncio.sleep(0.5)
-                price = response_data["data"]["fairPrice"]
-                # logger.info(f'mexc {coin} {price}')
-                return {"price": float(price)}
-        except Exception as ex:
-            logger.error(f"Mexc exception: {ex}")
-            return {"error": str(ex)}
+        self._running = True
+        try:
+            await self.ws_client.connect()
 
-    async def get_account(self):
-        return {"account": "account info"}
+            # Подписываемся на все символы
+            for symbol in self.symbols:
+                await self.ws_client.subscribe_ticker(symbol)
+
+            print("WebSocket started successfully")
+
+        except Exception as e:
+            self._running = False
+            raise
+
+    async def stop(self):
+        """Остановка WebSocket клиента"""
+        if self._running:
+            self._running = False
+            await self.ws_client.disconnect()
+            logger.info("WebSocket stopped")
 
     async def close_session(self):
         await self.session.close()
@@ -140,9 +166,6 @@ class DexApi(ExchangeApi):
         except Exception as ex:
             logger.error(f"Dex exception: {ex} - {coin}")
             return {"error": str(ex)}
-
-    async def get_account(self):
-        return {"account": "account info"}
 
     async def close_session(self):
         await self.session.close()
