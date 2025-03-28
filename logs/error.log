@@ -1,0 +1,423 @@
+2025-03-18 11:24:29.213 | ERROR    | src.product_exchanges:get_price_coin:140 - Dex exception: [WinError 64] Указанное сетевое имя более недоступно - VINE
+2025-03-18 11:24:29.214 | ERROR    | src.product2_arbitrage_manager:process_token:121 - [ERROR] Ошибка получения цен: VINE MEXC: {'price': 0.02495}, DEX: {'error': '[WinError 64] Указанное сетевое имя более недоступно'}
+2025-03-18 11:24:29.215 | ERROR    | src.product_exchanges:get_price_coin:140 - Dex exception: [WinError 64] Указанное сетевое имя более недоступно - 1DOLLAR
+2025-03-18 11:24:29.215 | ERROR    | src.product2_arbitrage_manager:process_token:121 - [ERROR] Ошибка получения цен: 1DOLLAR MEXC: {'price': 0.01032}, DEX: {'error': '[WinError 64] Указанное сетевое имя более недоступно'}
+2025-03-18 11:24:29.216 | ERROR    | src.product_exchanges:get_price_coin:140 - Dex exception: [WinError 64] Указанное сетевое имя более недоступно - PIN
+2025-03-18 11:24:29.216 | ERROR    | src.product2_arbitrage_manager:process_token:121 - [ERROR] Ошибка получения цен: PIN MEXC: {'price': 0.852}, DEX: {'error': '[WinError 64] Указанное сетевое имя более недоступно'}
+2025-03-18 11:43:27.047 | ERROR    | src.kafka.producer:delivery_callback:50 - Message delivery failed: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+2025-03-18 11:43:27.048 | ERROR    | src.kafka.producer:delivery_callback:50 - Message delivery failed: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+2025-03-18 11:43:27.048 | ERROR    | src.kafka.producer:delivery_callback:50 - Message delivery failed: KafkaError{code=_MSG_TIMED_OUT,val=-192,str="Local: Message timed out"}
+2025-03-18 11:48:05.037 | ERROR    | src.product_exchanges:get_price_coin:140 - Dex exception: [WinError 64] Указанное сетевое имя более недоступно - CLAY
+2025-03-18 11:48:05.049 | ERROR    | src.product2_arbitrage_manager:process_token:121 - [ERROR] Ошибка получения цен: CLAY MEXC: {'price': 4.84e-05}, DEX: {'error': '[WinError 64] Указанное сетевое имя более недоступно'}
+2025-03-28 20:42:50.515 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-28 20:42:50.515 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-28 20:42:50.515 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-28 20:42:50.516 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-28 20:42:50.516 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-28 20:42:50.516 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'WOJAK_USDT'
+2025-03-28 20:42:50.516 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-28 20:42:51.520 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-28 20:42:53.105 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:42:53.105 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MICHI_USDT'
+2025-03-28 20:42:53.105 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002628, 'vol_24': 79593.99, 'vol_6': 20325.98, 'vol_1': 1485.01}
+2025-03-28 20:42:53.106 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BLZ_USDT'
+2025-03-28 20:42:53.144 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.08711, 'vol_24': 66228.78, 'vol_6': 9056.72, 'vol_1': 792.3}
+2025-03-28 20:42:53.367 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4974, 'vol_24': 14306.62, 'vol_6': 3394.98, 'vol_1': 677.87}
+2025-03-28 20:42:53.508 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02438, 'vol_24': 1276.25, 'vol_6': 204.14, 'vol_1': 177.92}
+2025-03-28 20:42:53.508 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.05497, 'vol_24': 395777.16, 'vol_6': 44127.09, 'vol_1': 3360.54}
+2025-03-28 20:42:53.614 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.1585, 'vol_24': 461747.71, 'vol_6': 71963.04, 'vol_1': 18545.6}
+2025-03-28 20:42:54.233 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:42:54.502 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:42:54.859 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:42:55.065 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BLZ: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0331, 'vol_24': 15205.21, 'vol_6': 1235.37, 'vol_1': 531.03}
+2025-03-28 20:42:55.158 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MICHI: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02339, 'vol_24': 544337.83, 'vol_6': 85792.23, 'vol_1': 6490.73}
+2025-03-28 20:42:57.161 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01829, 'vol_24': 224552.92, 'vol_6': 30077.36, 'vol_1': 2482.93}
+2025-03-28 20:42:57.300 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:43:02.983 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:43:05.188 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9832, 'vol_24': 5506.32, 'vol_6': 29.95, 'vol_1': 14.73}
+2025-03-28 20:43:07.881 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:43:09.678 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:43:09.678 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:43:09.706 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:43:10.679 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:43:11.900 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:43:12.758 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002901, 'vol_24': 70179.26, 'vol_6': 13985.46, 'vol_1': 819.14}
+2025-03-28 20:43:12.758 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001884, 'vol_24': 517715.33, 'vol_6': 100987.55, 'vol_1': 17164.2}
+2025-03-28 20:43:15.334 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:43:17.258 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001641, 'vol_24': 40188.84, 'vol_6': 5810.67, 'vol_1': 40.02}
+2025-03-28 20:43:20.345 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:43:21.709 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:43:22.284 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:43:22.928 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:43:24.367 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003445, 'vol_24': 116388.39, 'vol_6': 23057.63, 'vol_1': 4284.45}
+2025-03-28 20:43:24.367 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:43:24.408 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:43:25.273 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:43:26.339 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000459, 'vol_24': 48599.83, 'vol_6': 14914.92, 'vol_1': 709.91}
+2025-03-28 20:43:27.453 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:43:30.387 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:43:32.866 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 115.63}
+2025-03-28 20:43:42.755 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:43:44.408 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:43:44.572 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:43:44.686 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:43:44.784 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:43:46.510 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:43:46.663 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 69080.77, 'vol_6': 5327.64, 'vol_1': 726.73}
+2025-03-28 20:43:47.016 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11897.09, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:43:50.664 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:43:51.295 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:43:52.385 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:43:53.035 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01829, 'vol_24': 224552.92, 'vol_6': 30077.36, 'vol_1': 2482.93}
+2025-03-28 20:43:58.036 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:44:00.026 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9832, 'vol_24': 5506.32, 'vol_6': 29.95, 'vol_1': 14.73}
+2025-03-28 20:44:01.603 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:44:02.837 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:44:02.984 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:44:03.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:44:03.966 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:44:05.502 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002901, 'vol_24': 70179.26, 'vol_6': 13985.46, 'vol_1': 819.14}
+2025-03-28 20:44:05.586 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:44:06.253 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001884, 'vol_24': 517715.33, 'vol_6': 100987.55, 'vol_1': 17164.2}
+2025-03-28 20:44:07.769 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:44:09.797 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001641, 'vol_24': 40188.84, 'vol_6': 5810.67, 'vol_1': 40.02}
+2025-03-28 20:44:11.814 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:44:12.833 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:44:13.071 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:44:15.017 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:44:15.317 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003429, 'vol_24': 116376.93, 'vol_6': 23074.12, 'vol_1': 4266.89}
+2025-03-28 20:44:15.317 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:44:15.917 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:44:16.032 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:44:17.888 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000459, 'vol_24': 48599.83, 'vol_6': 14914.92, 'vol_1': 709.91}
+2025-03-28 20:44:18.038 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:44:21.540 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:44:23.376 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 115.63}
+2025-03-28 20:44:33.331 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:44:35.257 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:44:35.451 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:44:35.614 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:44:35.614 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:44:37.115 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 68904.22, 'vol_6': 5327.64, 'vol_1': 726.73}
+2025-03-28 20:44:37.498 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11897.09, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:44:38.114 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:44:42.081 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:44:42.513 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:44:44.350 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01834, 'vol_24': 224534.63, 'vol_6': 30088.35, 'vol_1': 2387.03}
+2025-03-28 20:44:44.413 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:44:49.536 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:44:51.831 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9903, 'vol_24': 5520.08, 'vol_6': 43.71, 'vol_1': 28.49}
+2025-03-28 20:44:53.066 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:44:54.236 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:44:54.413 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:44:55.004 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:44:55.675 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:44:56.671 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:44:57.047 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002901, 'vol_24': 70179.26, 'vol_6': 13985.46, 'vol_1': 819.14}
+2025-03-28 20:44:59.145 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:45:01.356 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001642, 'vol_24': 40167.94, 'vol_6': 4389.79, 'vol_1': 59.64}
+2025-03-28 20:45:01.604 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001884, 'vol_24': 517707.01, 'vol_6': 100987.55, 'vol_1': 17157.8}
+2025-03-28 20:45:03.265 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:45:04.414 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:45:04.765 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:45:06.039 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:45:06.761 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:45:06.979 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003449, 'vol_24': 116358.18, 'vol_6': 23015.43, 'vol_1': 4247.93}
+2025-03-28 20:45:07.027 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:45:07.843 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:45:09.317 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000458, 'vol_24': 49801.78, 'vol_6': 16116.87, 'vol_1': 1675.1}
+2025-03-28 20:45:10.021 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:45:13.217 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:45:15.537 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 115.63}
+2025-03-28 20:45:25.803 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:45:27.618 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:45:27.797 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:45:28.306 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:45:28.344 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:45:29.752 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 68903.86, 'vol_6': 5327.64, 'vol_1': 719.26}
+2025-03-28 20:45:30.063 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:45:30.093 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11897.09, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:45:34.226 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:45:34.492 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:45:36.887 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01834, 'vol_24': 224534.63, 'vol_6': 30088.35, 'vol_1': 2387.03}
+2025-03-28 20:45:36.928 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:45:41.679 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:45:43.616 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9903, 'vol_24': 5520.08, 'vol_6': 43.71, 'vol_1': 28.49}
+2025-03-28 20:45:45.119 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:45:46.130 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:45:46.485 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:45:47.051 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:45:47.939 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:45:48.453 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002901, 'vol_24': 70174.01, 'vol_6': 13985.46, 'vol_1': 819.14}
+2025-03-28 20:45:48.757 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:45:49.741 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001884, 'vol_24': 517700.41, 'vol_6': 100987.55, 'vol_1': 17153.79}
+2025-03-28 20:45:50.475 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:45:52.218 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001642, 'vol_24': 39924.34, 'vol_6': 4389.79, 'vol_1': 59.64}
+2025-03-28 20:45:55.255 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:45:56.125 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:45:56.352 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:45:57.969 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:45:58.552 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003433, 'vol_24': 116303.75, 'vol_6': 22986.69, 'vol_1': 4162.94}
+2025-03-28 20:45:58.675 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:45:58.676 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:45:59.576 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:46:00.614 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0004559, 'vol_24': 49926.28, 'vol_6': 16241.37, 'vol_1': 1799.6}
+2025-03-28 20:46:02.021 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:46:04.609 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:46:07.318 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 115.63}
+2025-03-28 20:46:17.090 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:46:18.931 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:46:19.042 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:46:19.042 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:46:19.359 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:46:20.924 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 68903.86, 'vol_6': 5327.64, 'vol_1': 719.26}
+2025-03-28 20:46:21.436 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:46:21.724 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11892.04, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:46:26.167 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:46:26.446 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:46:28.079 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:46:28.396 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01835, 'vol_24': 224565.51, 'vol_6': 30119.22, 'vol_1': 2417.9}
+2025-03-28 20:46:33.206 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:46:35.677 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9903, 'vol_24': 5520.08, 'vol_6': 43.71, 'vol_1': 28.49}
+2025-03-28 20:46:37.371 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:46:38.524 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:46:38.616 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:46:39.446 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:46:39.684 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:46:40.575 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:46:41.066 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13986.87, 'vol_1': 820.54}
+2025-03-28 20:46:41.891 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001887, 'vol_24': 517950.4, 'vol_6': 101237.54, 'vol_1': 16498.25}
+2025-03-28 20:46:42.958 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:46:45.097 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001642, 'vol_24': 39899.52, 'vol_6': 3843.5, 'vol_1': 58.03}
+2025-03-28 20:46:46.829 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:46:47.928 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:46:48.286 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:46:49.247 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:46:50.106 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003433, 'vol_24': 116234.95, 'vol_6': 23001.42, 'vol_1': 4136.72}
+2025-03-28 20:46:50.218 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:46:50.613 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:46:50.891 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:46:52.325 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0004552, 'vol_24': 49976, 'vol_6': 16291.09, 'vol_1': 1849.32}
+2025-03-28 20:46:52.579 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:46:56.263 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:46:58.791 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 115.63}
+2025-03-28 20:47:08.744 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:47:11.018 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:47:11.413 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:47:11.916 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:47:12.080 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:47:13.353 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 68903.86, 'vol_6': 5327.64, 'vol_1': 719.26}
+2025-03-28 20:47:13.978 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:47:14.346 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11892.04, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:47:17.816 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:47:18.223 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GAMEVIRTUAL_USDT'
+2025-03-28 20:47:20.001 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:47:20.598 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GAMEVIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.01835, 'vol_24': 224564.85, 'vol_6': 30120.93, 'vol_1': 2434.22}
+2025-03-28 20:47:24.783 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BUSD_USDT'
+2025-03-28 20:47:27.172 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BUSD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.9903, 'vol_24': 5520.08, 'vol_6': 43.71, 'vol_1': 28.49}
+2025-03-28 20:47:28.377 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:47:29.643 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:47:29.671 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:47:30.036 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GME_USDT'
+2025-03-28 20:47:30.160 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:47:31.897 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GME: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001887, 'vol_24': 517950.4, 'vol_6': 101237.54, 'vol_1': 16498.25}
+2025-03-28 20:47:32.095 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 1968.43, 'vol_6': 496.03, 'vol_1': 12.09}
+2025-03-28 20:47:32.166 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13986.87, 'vol_1': 820.54}
+2025-03-28 20:47:33.801 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:47:37.331 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001642, 'vol_24': 39899.52, 'vol_6': 3843.5, 'vol_1': 58.03}
+2025-03-28 20:47:38.389 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:47:39.386 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:47:39.709 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AIPUMP_USDT'
+2025-03-28 20:47:40.466 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27844.02, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:47:41.085 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003428, 'vol_24': 116264.41, 'vol_6': 23030.88, 'vol_1': 4166.19}
+2025-03-28 20:47:41.587 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'AI16ZELIZA_USDT'
+2025-03-28 20:47:42.278 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AIPUMP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001724, 'vol_24': 1966.76, 'vol_6': 492.09, 'vol_1': 27.74}
+2025-03-28 20:47:42.656 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOON_USDT'
+2025-03-28 20:47:43.875 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AI16ZELIZA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0004552, 'vol_24': 49976, 'vol_6': 16291.09, 'vol_1': 1849.32}
+2025-03-28 20:47:44.737 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOON: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:47:48.342 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HEART_USDT'
+2025-03-28 20:47:50.884 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HEART: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.008385, 'vol_24': 22652.54, 'vol_6': 1120.4, 'vol_1': 24.28}
+2025-03-28 20:48:05.629 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'ELF_USDT'
+2025-03-28 20:48:08.191 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ELF: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:48:09.616 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GRPH_USDT'
+2025-03-28 20:48:10.506 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CLAY_USDT'
+2025-03-28 20:48:10.826 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'TAOCAT_USDT'
+2025-03-28 20:48:11.724 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRPH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002055, 'vol_24': 68903.86, 'vol_6': 5327.64, 'vol_1': 719.26}
+2025-03-28 20:48:12.941 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CLAY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 5.033e-05, 'vol_24': 1909.01, 'vol_6': 483, 'vol_1': 24.07}
+2025-03-28 20:48:12.941 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for TAOCAT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002789, 'vol_24': 11887.08, 'vol_6': 385.88, 'vol_1': 2.07}
+2025-03-28 20:50:18.410 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-28 20:50:18.411 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-28 20:50:18.411 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-28 20:50:18.411 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-28 20:50:18.411 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-28 20:50:18.413 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'WOJAK_USDT'
+2025-03-28 20:50:18.413 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-28 20:50:18.413 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-28 20:50:20.787 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02418, 'vol_24': 44.05, 'vol_6': 2.31, 'vol_1': 2.31}
+2025-03-28 20:50:20.787 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MICHI_USDT'
+2025-03-28 20:50:20.941 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.08711, 'vol_24': 66228.78, 'vol_6': 9056.72, 'vol_1': 1.88}
+2025-03-28 20:50:20.941 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BLZ_USDT'
+2025-03-28 20:50:21.195 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4974, 'vol_24': 14306.61, 'vol_6': 3166.96, 'vol_1': 677.87}
+2025-03-28 20:50:21.212 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:50:21.362 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:50:21.455 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.055, 'vol_24': 395973.39, 'vol_6': 38092.78, 'vol_1': 3542.27}
+2025-03-28 20:50:21.608 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002628, 'vol_24': 79593.99, 'vol_6': 20325.98, 'vol_1': 1485.01}
+2025-03-28 20:50:22.849 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:50:23.018 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.1582, 'vol_24': 462342.37, 'vol_6': 71446.08, 'vol_1': 16870.5}
+2025-03-28 20:50:23.379 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MICHI: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02336, 'vol_24': 544478.86, 'vol_6': 81802.72, 'vol_1': 6678.64}
+2025-03-28 20:50:24.004 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BLZ: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0331, 'vol_24': 15205.21, 'vol_6': 936.2, 'vol_1': 531.03}
+2025-03-28 20:50:25.438 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:50:33.201 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:50:34.406 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:50:34.482 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:50:35.767 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:50:36.236 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 314.22}
+2025-03-28 20:50:37.114 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13986.87, 'vol_1': 819.93}
+2025-03-28 20:50:38.927 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:50:41.856 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001648, 'vol_24': 39909.9, 'vol_6': 3853.87, 'vol_1': 61.64}
+2025-03-28 20:50:42.993 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:50:44.086 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:50:45.004 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:50:46.462 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003416, 'vol_24': 116222.18, 'vol_6': 23147.62, 'vol_1': 4077.04}
+2025-03-28 20:51:12.815 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:51:15.270 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:51:22.881 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:51:24.566 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:51:24.642 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:51:24.951 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:51:26.502 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:51:27.103 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13986.87, 'vol_1': 819.93}
+2025-03-28 20:51:28.721 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:51:30.726 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39910.87, 'vol_6': 3854.21, 'vol_1': 62.62}
+2025-03-28 20:51:32.800 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:51:33.594 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:51:34.513 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:51:35.743 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003429, 'vol_24': 116201.52, 'vol_6': 23133.47, 'vol_1': 4118.64}
+2025-03-28 20:52:00.946 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:52:03.161 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:52:11.596 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:52:12.789 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:52:12.832 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:52:14.422 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:52:15.250 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13986.87, 'vol_1': 819.93}
+2025-03-28 20:52:15.296 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:52:17.136 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:52:19.343 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39910.87, 'vol_6': 3853.01, 'vol_1': 57.99}
+2025-03-28 20:52:20.945 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:52:21.915 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:52:23.470 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:52:24.245 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003408, 'vol_24': 116159.61, 'vol_6': 23130.54, 'vol_1': 4004.04}
+2025-03-28 20:52:49.126 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:52:51.669 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:52:59.982 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:53:01.218 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:53:01.312 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:53:02.053 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:53:03.125 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:53:03.539 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13714.22, 'vol_1': 819.93}
+2025-03-28 20:53:05.098 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:53:07.492 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39910.87, 'vol_6': 3853.01, 'vol_1': 57.99}
+2025-03-28 20:53:09.105 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:53:10.285 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:53:12.100 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:53:12.301 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.00342, 'vol_24': 116214.92, 'vol_6': 23185.85, 'vol_1': 4059.35}
+2025-03-28 20:53:38.502 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:53:40.294 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:53:50.078 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:53:51.300 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:53:51.451 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:53:52.292 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:53:53.459 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:53:55.036 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13714.22, 'vol_1': 817.79}
+2025-03-28 20:53:55.455 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:53:57.316 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39895.56, 'vol_6': 3853.01, 'vol_1': 57.99}
+2025-03-28 20:53:59.359 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:54:00.357 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:54:01.262 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:54:03.150 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003403, 'vol_24': 116208.08, 'vol_6': 23242.12, 'vol_1': 4060.84}
+2025-03-28 20:54:28.181 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:54:31.033 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:54:38.468 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:54:39.610 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:54:39.778 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:54:40.335 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:54:41.703 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13714.22, 'vol_1': 817.79}
+2025-03-28 20:54:42.204 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:54:44.303 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:54:46.252 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39895.56, 'vol_6': 3853.01, 'vol_1': 57.99}
+2025-03-28 20:54:47.924 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:54:48.958 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:54:50.367 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:54:51.077 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003403, 'vol_24': 116088.18, 'vol_6': 23197.83, 'vol_1': 4053.21}
+2025-03-28 20:55:15.690 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 20:55:19.618 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:55:29.570 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 20:55:31.415 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 20:55:31.447 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 20:55:31.655 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 20:55:34.063 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002887, 'vol_24': 70175.42, 'vol_6': 13714.22, 'vol_1': 817.79}
+2025-03-28 20:55:34.111 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.43, 'vol_24': 5719.62, 'vol_6': 1284.54, 'vol_1': 308.9}
+2025-03-28 20:55:38.466 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 20:55:40.314 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001638, 'vol_24': 39895.56, 'vol_6': 3853.01, 'vol_1': 35.27}
+2025-03-28 20:55:44.478 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 20:55:46.299 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 20:55:46.893 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27623.18, 'vol_6': 2776.03, 'vol_1': 178.91}
+2025-03-28 20:55:48.370 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003399, 'vol_24': 116103.02, 'vol_6': 23225.23, 'vol_1': 4003.2}
+2025-03-28 21:00:19.877 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - LQTY
+2025-03-28 21:00:21.469 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LQTY: 'message', info mexc {'last_price': 0.698}, info dex {'error': ''}
+2025-03-28 21:00:21.880 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - ARKM
+2025-03-28 21:00:21.880 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - COOKIE
+2025-03-28 21:00:22.960 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ARKM: 'message', info mexc {'last_price': 0.57}, info dex {'error': ''}
+2025-03-28 21:00:23.536 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for COOKIE: 'message', info mexc {'last_price': 0.1153}, info dex {'error': ''}
+2025-03-28 21:00:27.029 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 21:00:29.303 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:00:37.923 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GEMS_USDT'
+2025-03-28 21:00:38.914 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'GNS_USDT'
+2025-03-28 21:00:38.977 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SHOGGOTH_USDT'
+2025-03-28 21:00:39.785 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GEMS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:00:40.840 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GNS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.42, 'vol_24': 2063.24, 'vol_6': 590.85, 'vol_1': 94.81}
+2025-03-28 21:00:41.111 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SHOGGOTH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002861, 'vol_24': 70223.26, 'vol_6': 13760.91, 'vol_1': 865.63}
+2025-03-28 21:00:42.925 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BULLY_USDT'
+2025-03-28 21:00:45.387 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BULLY: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.001622, 'vol_24': 39809.42, 'vol_6': 3847.21, 'vol_1': 40.47}
+2025-03-28 21:00:46.958 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'LINA_USDT'
+2025-03-28 21:00:47.865 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BABYSHARK_USDT'
+2025-03-28 21:00:49.041 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for LINA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.000339, 'vol_24': 27311.34, 'vol_6': 2641.82, 'vol_1': 178.91}
+2025-03-28 21:00:50.455 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BABYSHARK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.003384, 'vol_24': 116575.31, 'vol_6': 23750.39, 'vol_1': 4525.23}
+2025-03-28 21:01:15.377 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BSX_USDT'
+2025-03-28 21:01:17.621 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BSX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:01:24.458 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-28 21:01:24.460 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-28 21:01:24.461 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-28 21:01:24.461 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-28 21:01:24.461 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-28 21:01:24.462 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-28 21:01:24.462 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-28 21:01:25.468 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'WOJAK_USDT'
+2025-03-28 21:01:26.946 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:01:26.946 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MICHI_USDT'
+2025-03-28 21:01:26.971 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:01:27.000 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002615, 'vol_24': 79955.74, 'vol_6': 19527.44, 'vol_1': 1591.62}
+2025-03-28 21:01:27.000 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SNT_USDT'
+2025-03-28 21:01:27.437 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.08711, 'vol_24': 66228.78, 'vol_6': 9056.72, 'vol_1': 1.88}
+2025-03-28 21:01:27.528 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0566, 'vol_24': 401863.87, 'vol_6': 47216.8, 'vol_1': 13677.92}
+2025-03-28 21:01:27.548 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.1561, 'vol_24': 470545.52, 'vol_6': 79574.14, 'vol_1': 23374.63}
+2025-03-28 21:01:27.579 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4939, 'vol_24': 14976.1, 'vol_6': 3506.53, 'vol_1': 1355.68}
+2025-03-28 21:01:27.811 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02418, 'vol_24': 44.05, 'vol_6': 2.31, 'vol_1': 2.31}
+2025-03-28 21:01:29.312 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SNT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02365, 'vol_24': 43104.11, 'vol_6': 3274.47, 'vol_1': 1225.96}
+2025-03-28 21:01:29.343 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MICHI: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.023, 'vol_24': 547573.1, 'vol_6': 83202.78, 'vol_1': 8160.89}
+2025-03-28 21:03:55.054 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-28 21:03:55.055 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-28 21:03:56.066 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'WOJAK_USDT'
+2025-03-28 21:03:57.368 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:03:57.553 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.08711, 'vol_24': 66228.78, 'vol_6': 7605.85, 'vol_1': 1.88}
+2025-03-28 21:03:57.754 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0566, 'vol_24': 401863.87, 'vol_6': 46456.7, 'vol_1': 13597.51}
+2025-03-28 21:03:57.910 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-28 21:03:58.188 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.156, 'vol_24': 471215.75, 'vol_6': 80241.3, 'vol_1': 23453.99}
+2025-03-28 21:03:58.312 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4928, 'vol_24': 15129.66, 'vol_6': 3660.09, 'vol_1': 1509.24}
+2025-03-28 21:03:58.925 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02418, 'vol_24': 44.05, 'vol_6': 2.31, 'vol_1': 2.31}
+2025-03-28 21:03:59.127 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002615, 'vol_24': 79955.74, 'vol_6': 19527.44, 'vol_1': 606.96}

@@ -80,13 +80,10 @@ class MexcAPI(ExchangeApi, MexcWebSocket):
             }
 
     async def get_price_coin(self, token: str) -> dict:
-        """Получение цены из кэша или через HTTP если нет в кэше"""
         try:
             async with self.lock:
-                print(self.price_cache)
-                if token in self.price_cache:
-                    print('getting from cache', token)
-                    return {"last_price": self.price_cache[token]['last_price']}
+                cache_key = f"{token.upper()}_USDT" if not token.endswith('_USDT') else token.upper()
+                return {"last_price": self.price_cache[cache_key]['last_price']}
 
         except Exception as e:
             logger.error(f"Error getting price from cache: {e}")
