@@ -421,3 +421,205 @@
 2025-03-28 21:03:58.312 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4928, 'vol_24': 15129.66, 'vol_6': 3660.09, 'vol_1': 1509.24}
 2025-03-28 21:03:58.925 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02418, 'vol_24': 44.05, 'vol_6': 2.31, 'vol_1': 2.31}
 2025-03-28 21:03:59.127 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002615, 'vol_24': 79955.74, 'vol_6': 19527.44, 'vol_1': 606.96}
+2025-03-29 15:14:59.513 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-29 15:14:59.521 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-29 15:15:00.532 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'WOJAK_USDT'
+2025-03-29 15:15:01.761 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:01.761 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MICHI_USDT'
+2025-03-29 15:15:01.792 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:02.214 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0837, 'vol_24': 43002.69, 'vol_6': 10032.05, 'vol_1': 1798.91}
+2025-03-29 15:15:02.214 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SNT_USDT'
+2025-03-29 15:15:02.260 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WOJAK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0002478, 'vol_24': 100160.63, 'vol_6': 49501.81, 'vol_1': 6512.17}
+2025-03-29 15:15:02.260 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SNX_USDT'
+2025-03-29 15:15:02.359 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.05165, 'vol_24': 449246.36, 'vol_6': 147561.23, 'vol_1': 25463.16}
+2025-03-29 15:15:02.359 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'API3_USDT'
+2025-03-29 15:15:02.407 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.1511, 'vol_24': 282354.9, 'vol_6': 33043.49, 'vol_1': 3114.09}
+2025-03-29 15:15:02.507 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:02.563 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4845, 'vol_24': 10209.89, 'vol_6': 1682.41, 'vol_1': 0.23}
+2025-03-29 15:15:03.717 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MICHI: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02078, 'vol_24': 1120529.51, 'vol_6': 126848.37, 'vol_1': 37169.13}
+2025-03-29 15:15:03.742 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SNT: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02329, 'vol_24': 115350.74, 'vol_6': 9741.02, 'vol_1': 2227.8}
+2025-03-29 15:15:03.858 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SNX: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.7836, 'vol_24': 12927.45, 'vol_6': 8604.45, 'vol_1': 2626.92}
+2025-03-29 15:15:04.105 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for API3: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 1.15, 'vol_24': 338605.37, 'vol_6': 113722.79, 'vol_1': 22111.48}
+2025-03-29 15:15:41.719 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SFP_USDT'
+2025-03-29 15:15:41.719 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BEL_USDT'
+2025-03-29 15:15:41.720 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'STRK_USDT'
+2025-03-29 15:15:41.720 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BID_USDT'
+2025-03-29 15:15:41.720 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'BIO_USDT'
+2025-03-29 15:15:41.720 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SKL_USDT'
+2025-03-29 15:15:41.720 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SLP_USDT'
+2025-03-29 15:15:44.369 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SKL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:44.416 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SFP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.4845, 'vol_24': 10209.89, 'vol_6': 1682.41, 'vol_1': 0.23}
+2025-03-29 15:15:44.417 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SLP: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:44.554 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for STRK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.1511, 'vol_24': 282354.9, 'vol_6': 33023.94, 'vol_1': 3114.09}
+2025-03-29 15:15:44.710 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BIO: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0837, 'vol_24': 43002.69, 'vol_6': 10032.05, 'vol_1': 1798.91}
+2025-03-29 15:15:44.860 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BEL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:15:46.855 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BID: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.05165, 'vol_24': 449246.46, 'vol_6': 147561.32, 'vol_1': 25463.25}
+2025-03-29 15:25:42.902 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - BAL
+2025-03-29 15:25:44.665 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BAL: 'message', info mexc {'last_price': 1.341}, info dex {'error': ''}
+2025-03-29 15:25:52.896 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - GRASS
+2025-03-29 15:25:54.700 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GRASS: 'message', info mexc {'last_price': 1.7081}, info dex {'error': ''}
+2025-03-29 15:35:56.889 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - RAY
+2025-03-29 15:35:58.399 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for RAY: 'message', info mexc {'last_price': 1.743}, info dex {'error': ''}
+2025-03-29 15:36:01.896 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - CAPTAINBNB
+2025-03-29 15:36:02.897 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - BLUBAVAX
+2025-03-29 15:36:03.803 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CAPTAINBNB: 'message', info mexc {'last_price': 0.00434}, info dex {'error': ''}
+2025-03-29 15:36:04.645 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BLUBAVAX: 'message', info mexc {'last_price': 0.00466}, info dex {'error': ''}
+2025-03-29 15:39:21.843 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'PONKE_USDT'
+2025-03-29 15:39:21.843 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MVL_USDT'
+2025-03-29 15:39:21.843 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'VIRTUAL_USDT'
+2025-03-29 15:39:21.843 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'FIDA_USDT'
+2025-03-29 15:39:21.844 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MOODENGETH_USDT'
+2025-03-29 15:39:21.844 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOLV_USDT'
+2025-03-29 15:39:21.844 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'DEGEN_USDT'
+2025-03-29 15:39:21.844 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HOOK_USDT'
+2025-03-29 15:39:24.333 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MVL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:39:24.333 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CHESS_USDT'
+2025-03-29 15:39:24.519 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for FIDA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0986, 'vol_24': 36200.02, 'vol_6': 10451.38, 'vol_1': 1276.25}
+2025-03-29 15:39:24.519 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HOOD_USDT'
+2025-03-29 15:39:24.769 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOLV: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02887, 'vol_24': 29219.6, 'vol_6': 6821.4, 'vol_1': 417.38}
+2025-03-29 15:39:24.816 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PONKE: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09189, 'vol_24': 735205.55, 'vol_6': 421702.01, 'vol_1': 3147.22}
+2025-03-29 15:39:24.874 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.6098, 'vol_24': 2500616.25, 'vol_6': 731578.09, 'vol_1': 64142.02}
+2025-03-29 15:39:24.874 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DEGEN: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002942, 'vol_24': 528870.24, 'vol_6': 105872.08, 'vol_1': 14614.98}
+2025-03-29 15:39:25.017 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:39:25.172 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MOODENGETH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 3.343e-05, 'vol_24': 175090.9, 'vol_6': 35193.61, 'vol_1': 3273.51}
+2025-03-29 15:39:26.215 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CHESS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.07787, 'vol_24': 15916.5, 'vol_6': 4484.84, 'vol_1': 156.41}
+2025-03-29 15:39:26.614 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOD: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 4.783e-05, 'vol_24': 235891.68, 'vol_6': 27113.69, 'vol_1': 3833.6}
+2025-03-29 15:41:03.395 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:03.395 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:03.440 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:03.643 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:04.017 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:04.344 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:04.480 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:04.743 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SCR: 'message', info mexc {'last_price': 0.2969}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:04.789 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CULT: 'message', info mexc {'last_price': 0.000712}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:05.135 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for J: 'message', info mexc {'last_price': 0.1966}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:05.258 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DOGEGOV: 'message', info mexc {'last_price': 0.01358}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:05.365 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for NEUR: 'message', info mexc {'last_price': 0.00341}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:05.599 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for W: 'message', info mexc {'last_price': 0.0861}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:06.302 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for T: 'message', info mexc {'last_price': 0.01551}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:41:12.720 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:12.751 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:12.968 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:41:12.968 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:42:14.276 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'PONKE_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MVL_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'VIRTUAL_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'FIDA_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MOODENGETH_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOLV_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'DEGEN_USDT'
+2025-03-29 15:42:14.278 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HOOK_USDT'
+2025-03-29 15:42:16.625 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOLV: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02887, 'vol_24': 29219.6, 'vol_6': 6646.36, 'vol_1': 417.38}
+2025-03-29 15:42:16.761 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PONKE: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09189, 'vol_24': 735205.55, 'vol_6': 421417.09, 'vol_1': 3147.22}
+2025-03-29 15:42:16.806 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MVL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:42:17.225 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for FIDA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09863, 'vol_24': 36090.54, 'vol_6': 10403.86, 'vol_1': 1289.71}
+2025-03-29 15:42:17.225 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:42:17.502 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.6096, 'vol_24': 2501002.9, 'vol_6': 726758.39, 'vol_1': 64374.88}
+2025-03-29 15:42:17.533 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MOODENGETH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 3.343e-05, 'vol_24': 175090.9, 'vol_6': 35193.61, 'vol_1': 3273.51}
+2025-03-29 15:42:17.580 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DEGEN: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002942, 'vol_24': 526543.62, 'vol_6': 98603.03, 'vol_1': 14613.96}
+2025-03-29 15:43:37.375 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:37.376 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:37.544 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:37.794 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:37.880 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:38.270 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:38.407 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:43:38.617 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for WHITE: 'message', info mexc {'last_price': 0.0006662}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:38.971 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for BLUBAVAX: 'message', info mexc {'last_price': 0.00466}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:39.033 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CHEX: 'message', info mexc {'last_price': 0.1868}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:39.576 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIVI: 'message', info mexc {'last_price': 0.01185}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:39.622 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for GROKCOIN: 'message', info mexc {'last_price': 0.000409}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:39.683 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PAIN: 'message', info mexc {'last_price': 1.84}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:40.160 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CATS: 'message', info mexc {'last_price': 7.5e-06}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 15:43:41.751 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 429
+2025-03-29 15:53:39.100 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'PONKE_USDT'
+2025-03-29 15:53:39.100 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MVL_USDT'
+2025-03-29 15:53:39.100 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'FIDA_USDT'
+2025-03-29 15:53:39.101 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MOODENGETH_USDT'
+2025-03-29 15:53:39.101 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOLV_USDT'
+2025-03-29 15:53:39.101 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'DEGEN_USDT'
+2025-03-29 15:53:40.111 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HOOK_USDT'
+2025-03-29 15:53:40.111 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'VIRTUAL_USDT'
+2025-03-29 15:53:41.646 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MVL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:53:41.708 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for FIDA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09876, 'vol_24': 36115.45, 'vol_6': 9569.28, 'vol_1': 1304.24}
+2025-03-29 15:53:42.098 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PONKE: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09147, 'vol_24': 735128.76, 'vol_6': 420186.01, 'vol_1': 2498.51}
+2025-03-29 15:53:42.423 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOLV: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02887, 'vol_24': 29263.75, 'vol_6': 6644.49, 'vol_1': 320.55}
+2025-03-29 15:53:42.423 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DEGEN: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002944, 'vol_24': 531413.8, 'vol_6': 96392.34, 'vol_1': 18061.07}
+2025-03-29 15:53:42.423 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MOODENGETH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 3.343e-05, 'vol_24': 175090.9, 'vol_6': 32688.33, 'vol_1': 3211.71}
+2025-03-29 15:53:42.980 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOK: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 15:53:43.531 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.6097, 'vol_24': 2509090.82, 'vol_6': 726087.6, 'vol_1': 79012.98}
+2025-03-29 16:03:46.892 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - ACH
+2025-03-29 16:03:47.890 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - AVA
+2025-03-29 16:03:47.892 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - APE
+2025-03-29 16:03:48.544 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for ACH: 'message', info mexc {'last_price': 0.02184}, info dex {'error': ''}
+2025-03-29 16:03:49.042 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for AVA: 'message', info mexc {'last_price': 0.5461}, info dex {'error': ''}
+2025-03-29 16:03:49.495 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for APE: 'message', info mexc {'last_price': 0.4762}, info dex {'error': ''}
+2025-03-29 16:13:57.882 | ERROR    | src.product_exchanges:get_price_coin:164 - Dex exception:  - SONIC
+2025-03-29 16:13:59.040 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SONIC: 'message', info mexc {'last_price': 0.2449}, info dex {'error': ''}
+2025-03-29 16:17:38.956 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'PONKE_USDT'
+2025-03-29 16:17:38.957 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MVL_USDT'
+2025-03-29 16:17:38.957 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'FIDA_USDT'
+2025-03-29 16:17:38.957 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MOODENGETH_USDT'
+2025-03-29 16:17:38.957 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOLV_USDT'
+2025-03-29 16:17:38.958 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'DEGEN_USDT'
+2025-03-29 16:17:39.967 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'HOOK_USDT'
+2025-03-29 16:17:39.967 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'VIRTUAL_USDT'
+2025-03-29 16:17:40.264 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:40.374 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:40.374 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:40.375 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:40.516 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:40.541 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:41.184 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:41.193 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:41.576 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MOODENGETH: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:41.702 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOLV: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:41.764 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for FIDA: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:41.810 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MVL: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:42.135 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:42.135 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PONKE: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:42.241 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:42.297 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DEGEN: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:42.328 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:42.344 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:42.726 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIRTUAL: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:42.926 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:43.202 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOK: 'message', info mexc None, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:43.572 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:43.731 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:43.745 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:43.821 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CHESS: 'message', info mexc {'last_price': 0.0775}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:43.928 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for HOOD: 'message', info mexc {'last_price': 4.82e-05}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.007 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PEPE2: 'message', info mexc {'last_price': 1.198e-08}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.101 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MAVIA: 'message', info mexc {'last_price': 0.3764}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.180 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PUFFER: 'message', info mexc {'last_price': 0.2133}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.355 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:44.592 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:44.645 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:44.879 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for NKN: 'message', info mexc {'last_price': 0.04183}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.940 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for NMR: 'message', info mexc {'last_price': 8.281}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:44.998 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:17:45.320 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for NOT: 'message', info mexc {'last_price': 0.002269}, info dex {'error': 'HTTP getting price error'}
+2025-03-29 16:17:45.483 | ERROR    | src.product_exchanges:get_price_coin:147 - Dex HTTP error 400
+2025-03-29 16:28:10.147 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'PONKE_USDT'
+2025-03-29 16:28:10.147 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MVL_USDT'
+2025-03-29 16:28:10.148 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'FIDA_USDT'
+2025-03-29 16:28:10.148 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'MOODENGETH_USDT'
+2025-03-29 16:28:10.148 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'SOLV_USDT'
+2025-03-29 16:28:10.148 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'DEGEN_USDT'
+2025-03-29 16:28:11.157 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'VIRTUAL_USDT'
+2025-03-29 16:28:12.289 | ERROR    | src.product_exchanges:get_price_coin:89 - Error getting price from cache: 'CHESS_USDT'
+2025-03-29 16:28:13.129 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for DEGEN: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.002925, 'vol_24': 541008.65, 'vol_6': 117717.9, 'vol_1': 38009.38}
+2025-03-29 16:28:13.146 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for FIDA: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.09831, 'vol_24': 36883.64, 'vol_6': 9848.25, 'vol_1': 1780.77}
+2025-03-29 16:28:13.308 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for PONKE: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.0911, 'vol_24': 735544.83, 'vol_6': 412938.44, 'vol_1': 7739.72}
+2025-03-29 16:28:13.645 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MVL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0}
+2025-03-29 16:28:13.738 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for MOODENGETH: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 3.322e-05, 'vol_24': 175372.74, 'vol_6': 33002.5, 'vol_1': 5474.88}
+2025-03-29 16:28:14.092 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for SOLV: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.02881, 'vol_24': 29551.14, 'vol_6': 6895.52, 'vol_1': 823.78}
+2025-03-29 16:28:14.154 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for CHESS: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.07738, 'vol_24': 16532.33, 'vol_6': 4781.47, 'vol_1': 910.29}
+2025-03-29 16:28:14.621 | ERROR    | src.product2_arbitrage_manager:process_token:161 - Failed to fetch prices for VIRTUAL: 'NoneType' object is not subscriptable, info mexc None, info dex {'price': 0.6063, 'vol_24': 2475996.14, 'vol_6': 732531.94, 'vol_1': 86200.38}

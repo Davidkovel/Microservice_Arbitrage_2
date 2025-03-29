@@ -3,7 +3,7 @@ import asyncio
 from aiogram_bot.bot import TelegramBot
 from src.factory import AbstractFactory, ArbitrageFactory
 
-from utils import logger
+from utils.logger import logger
 from config import ConfigLoader
 
 
@@ -45,5 +45,6 @@ def turn_off_debug():
 
 if __name__ == "__main__":
     print("[INFO] Prod started")
+    # turn_off_debug()
     asyncio.run(main())
     # SWFTC

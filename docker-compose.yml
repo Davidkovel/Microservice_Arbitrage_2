@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: price-instance-1
     volumes:
-      - ./config/tokens1.json:/app/config/tokens1.json
+      - ./config/main_tokens.json:/app/config/main_tokens.json
     environment:
       - PROXY_URL=${PROXY_URL_1}
       - PROXY_LOGIN=${PROXY_LOGIN_1}
@@ -20,7 +20,7 @@ services:
       dockerfile: Dockerfile
     container_name: price-instance-2
     volumes:
-      - ./config/tokens2.json:/app/config/tokens2.json
+      - ./config/main_tokens2.json:/app/config/main_tokens2.json
     environment:
       - PROXY_URL=${PROXY_URL_2}
       - PROXY_LOGIN=${PROXY_LOGIN_2}
@@ -28,33 +28,3 @@ services:
       - TOKENS_PATH=/app/config/tokens2.json
       - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_2}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN_2}
-
-  fetcher-instance-3:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: price-instance-3
-    volumes:
-      - ./config/tokens3.json:/app/config/tokens3.json
-    environment:
-      - PROXY_URL=${PROXY_URL_3}
-      - PROXY_LOGIN=${PROXY_LOGIN_3}
-      - PROXY_PASSWORD=${PROXY_PASSWORD_3}
-      - TOKENS_PATH=/app/config/tokens3.json
-      - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_3}
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN_3}
-
-  fetcher-instance-4:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: price-instance-4
-    volumes:
-      - ./config/tokens4.json:/app/config/tokens4.json
-    environment:
-      - PROXY_URL=${PROXY_URL_4}
-      - PROXY_LOGIN=${PROXY_LOGIN_4}
-      - PROXY_PASSWORD=${PROXY_PASSWORD_4}
-      - TOKENS_PATH=/app/config/tokens4.json
-      - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_4}
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN_4}

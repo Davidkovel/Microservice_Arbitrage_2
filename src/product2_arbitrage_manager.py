@@ -131,12 +131,12 @@ class ArbitrageManager:
             result = await self.price_fetcher.fetch_prices(token, contract_address, chain)
             token, price_mexc, price_dex = result
 
-            logger.info(f'CHECKING {token}, {price_mexc} - {price_dex} ')
+            #logger.info(f'CHECKING {token}, {price_mexc} - {price_dex} ')
             if "error" in price_dex:
                 error_dex_time_limit = price_dex["error"].split("!")[0]
                 check_error_dex_time_limit = price_dex["message"]
                 if error_dex_time_limit == "Rate limit exceeded" or check_error_dex_time_limit == "Request frequently too fast!":
-                    time = random.randint(2, 3)
+                    time = random.randint(2, 4)
                     await asyncio.sleep(time)
                     logger.warning("Sleeping Limit time too fast!!")
                 logger.error(f"[ERROR] Ошибка получения цен: {token} MEXC: {price_mexc}, DEX: {price_dex}")
@@ -165,7 +165,7 @@ class ArbitrageManager:
         while True:
             token_info = await queue.get()  # Получаем задачу из очереди
             try:
-                if queue.qsize() % 17 == 0:
+                if queue.qsize() % 5 == 0:
                     await asyncio.sleep(1)
                 await self.process_token(token_info)
             finally:

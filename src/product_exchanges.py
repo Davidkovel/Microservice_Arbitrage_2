@@ -125,44 +125,65 @@ class DexApi(ExchangeApi):
         super().__init__()
         self.base_url = "https://api.dexscreener.com/token-pairs/v1/"
         self.headers = {
-            "User-Agent": user_agents[0]
+            "User-Agent": user_agents[0],
+            "Accept": "application/json"
         }
         self.proxy_manager = proxy_manager
+        self.timeout = aiohttp.ClientTimeout(total=10)  # Таймаут 10 секунд
+        self.max_retries = 3  # Максимальное количество попыток
+        self.retry_delay = 1  # Задержка между попытками в секундах
 
     async def init(self):
         await super().init()
 
     async def get_price_coin(self, coin: str, address_contract: str, chain: str) -> dict:
-        try:
-            url = f"{self.base_url}/{chain}/{address_contract}"
+        url = f"{self.base_url}{chain}/{address_contract}"
+        proxy_url = self.proxy_manager.get_proxy_url()
+        proxy_auth = self.proxy_manager.get_proxy_auth()
 
-            proxy_url = self.proxy_manager.get_proxy_url()
-            proxy_auth = self.proxy_manager.get_proxy_auth()
+        for attempt in range(self.max_retries):
+            try:
+                async with self.session.get(
+                        url,
+                        proxy=proxy_url,
+                        proxy_auth=proxy_auth,
+                        headers=self.headers,
+                        timeout=self.timeout
+                ) as response:
+                    if response.status == 429:
+                        retry_after = int(response.headers.get('Retry-After', 5))
+                        logger.warning(f"Rate limit exceeded. Retry after {retry_after} seconds")
 
-            async with self.session.get(url, proxy=proxy_url, proxy_auth=proxy_auth, headers=self.headers) as response:
-                if response.status == 429:
-                    logger.warning(f"Time limit excedeed")
-                    await asyncio.sleep(5)
-                if response.status != 200:
-                    logger.error(f"Dex HTTP error {response.status}")
-                    return {"error": "HTTP getting price error"}
+                        await asyncio.sleep(retry_after)
+                        continue
+                    if response.status != 200:
+                        logger.error(f"Dex HTTP error {response.status}")
+                        await asyncio.sleep(self.retry_delay)
+                        continue
+                    response_data = await response.json()
 
-                response_data = await response.json()
-                for index, data in enumerate(response_data):
-                    vol_24 = response_data[index]["volume"]["h24"]
-                    vol_6 = response_data[index]["volume"]["h6"]
-                    vol_1 = response_data[index]["volume"]["h1"]
-                    if vol_24 > 0 and vol_6 > 0 and vol_1 > 0:
-                        price_usd = response_data[index]["priceUsd"]
+                    for index, data in enumerate(response_data):
+                        vol_24 = response_data[index]["volume"]["h24"]
+                        vol_6 = response_data[index]["volume"]["h6"]
+                        vol_1 = response_data[index]["volume"]["h1"]
+                        if vol_24 > 0 and vol_6 > 0 and vol_1 > 0:
+                            price_usd = response_data[index]["priceUsd"]
 
-                        # logger.info(f'dex: {coin} - {price_usd}')
-                        return {"price": float(price_usd), "vol_24": vol_24, "vol_6": vol_6, "vol_1": vol_1}
+                            return {"price": float(price_usd), "vol_24": vol_24, "vol_6": vol_6, "vol_1": vol_1}
 
                 return {"price": 0}
-
-        except Exception as ex:
-            logger.error(f"Dex exception: {ex} - {coin}")
-            return {"error": str(ex)}
+            except asyncio.TimeoutError:
+                logger.warning(f"Timeout occurred for {coin}, attempt {attempt + 1}/{self.max_retries}")
+                if attempt < self.max_retries - 1:
+                    await asyncio.sleep(self.retry_delay)
+                continue
+            except Exception as ex:
+                logger.error(f"Dex exception for {coin}: {str(ex)}")
+                if attempt < self.max_retries - 1:
+                    await asyncio.sleep(self.retry_delay)
+                continue
+        logger.error(f"Failed to get price for {coin} after {self.max_retries} attempts")
+        return {"error": "Max retries exceeded"}
 
     async def close_session(self):
         await self.session.close()

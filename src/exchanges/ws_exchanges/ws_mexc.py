@@ -34,7 +34,7 @@ class MexcWebSocket:
     async def _keep_alive(self):
         """Поддержание соединения"""
         while self._running:
-            print('Sending ping...')
+            # print('Sending ping...')
             await asyncio.sleep(25)
             await self.send_ping()
 
