@@ -10,7 +10,7 @@ services:
       - PROXY_URL=${PROXY_URL_1}
       - PROXY_LOGIN=${PROXY_LOGIN_1}
       - PROXY_PASSWORD=${PROXY_PASSWORD_1}
-      - TOKENS_PATH=/app/config/tokens1.json
+      - TOKENS_PATH=/app/config/main_tokens.json
       - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_1}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN_1}
 
@@ -25,6 +25,6 @@ services:
       - PROXY_URL=${PROXY_URL_2}
       - PROXY_LOGIN=${PROXY_LOGIN_2}
       - PROXY_PASSWORD=${PROXY_PASSWORD_2}
-      - TOKENS_PATH=/app/config/tokens2.json
+      - TOKENS_PATH=/app/config/main_tokens2.json
       - KAFKA_SERVER_HOST=${KAFKA_SERVER_HOST_2}
       - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN_2}
